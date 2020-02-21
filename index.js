@@ -4,7 +4,7 @@ function getDogImage(num) {
   fetch(`https://dog.ceo/api/breeds/image/random/${num}`)
     .then(response => response.json())
     .then(responseJson => displayResults(responseJson));
-    console.log(responseJson);
+  console.log(responseJson);
 }
 
 function displayResults(responseJson) {
